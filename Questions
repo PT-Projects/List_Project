@@ -1,0 +1,7 @@
+1. Its used to designate what the class will return.
+2. SortedList stores this data type because it allows for the usage of the abstractList class and allows the user to use any data type they want in the list.
+3. All of the list types are required to have an add(E obj) method, otherwise you cant add item to the list.
+4. It will preform the same action for each list type that uses it, no matter the data type.
+5. It would make sense to use a sorted list if you wanted to sort a set of name alphabetically, rather than randomly. It would be better to use an unsorted list if you wanted to fill it with numbers and pick one randomly.
+6. Its better to use the E data type rather than the Object data type because you may create your own data type that stores items NOT based off the Object type.
+7. I would create a concrete method in the AbstractList class and have it search the list for the obj you wasnt removed and return true of successful otherwise return false.
