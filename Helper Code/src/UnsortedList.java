@@ -17,12 +17,14 @@ public class UnsortedList<E> extends AbstractList<E>
      * @return true if the add is successful, false otherwise
      */
     public boolean add(E obj) {
+
         if(isFull())
             return false;
 
         int i = size();
         theList[i] = obj;
         size++;
+
         return true;
     }
 
@@ -32,6 +34,7 @@ public class UnsortedList<E> extends AbstractList<E>
      * @return the index where obj is found in the list or -1 if not found
      */
     public int indexOf(E obj) {
+
         for(int i = 0; i < size(); i++)
         {
             if(theList[i].equals(obj))
@@ -39,5 +42,6 @@ public class UnsortedList<E> extends AbstractList<E>
         }
 
         return -1;
+
     }
 }

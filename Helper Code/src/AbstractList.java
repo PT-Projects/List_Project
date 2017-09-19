@@ -11,7 +11,7 @@ public abstract class AbstractList<E>
      * @return true if the list is full, false otherwise
      */
     public boolean isFull() {
-        return size ==  theList.length;
+        return size == theList.length;
     }
 
     /**
@@ -29,7 +29,21 @@ public abstract class AbstractList<E>
      * @return a string representation of the list
      */
     public String toString() {
-        // ...
+
+        String theStringList = "[";
+
+        for (int x = 0; x < theList.length; x++){
+            if (x == theList.length-1){
+                theStringList += theList[x];
+            }
+            else{
+                theStringList += theList[x] + ", ";
+            }
+        }
+
+        theStringList += "]";
+
+        return theStringList;
     }
 
     public abstract boolean add(E obj);
