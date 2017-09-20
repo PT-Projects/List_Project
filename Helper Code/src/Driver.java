@@ -29,8 +29,8 @@ public class Driver {
 
         }
 
-        System.out.println(usl.toString());
-        System.out.println(sl.toString());
+        System.out.println("Unsorted: " + usl.toString());
+        System.out.println("Sorted: " + sl.toString());
 
     }
 }
